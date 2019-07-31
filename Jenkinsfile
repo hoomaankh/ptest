@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-        echo 'Running build automation'
-        python3.7 python.py
+        sudo echo 'Running build automation' > /home/test.tx
+        sudo python3.7 python.py
       }
     }
   }
