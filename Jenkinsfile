@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         echo 'Running build automation'
-        python3.7 Pytest.py
+        python3.7 python.py
       }
     }
   }
